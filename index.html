@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LG101_NaTongco</title>
+    <meta charset="utf-8"
+  </head>
+  <body>
+    <script>
+      function determineTriangle(a, b, c) {
+         if (isNaN(a)) {
+            window.alert("Your input is invalid! Please enter a number!");
+        } else if (isNaN(b)) {
+            window.alert("Your input is invalid! Please enter a number!");
+        } else if (isNaN(c)){
+            window.alert("Your input is invalid! Please enter a number!");
+        } else if (a==b && b==c) {
+            window.alert("The triangle is EQUILATERAL");
+        } else if (a == b || b == c || c == a)
+            window.alert("The triangle is ISOSCELES");
+        else
+          window.alert("The triangle is SCALENE");
+      }
+
+      var a = parseInt(prompt("Please enter the length of the first side of the triangle", "0"));
+      var b = parseInt(prompt("Please enter the length of the second side of the triangle", "0"));
+      var c = parseInt(prompt("Please enter the length of the third side of the triangle", "0"));
+
+      //calls the function
+      determineTriangle(a, b, c);
+        
+    </script>
+
+  </body>
+</html>
